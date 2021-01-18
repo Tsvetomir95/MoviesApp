@@ -1,0 +1,12 @@
+<div class="movie__container" (mouseover)="showOverview = true" (mouseleave)="showOverview = false">
+    
+    <img class="movie__poster" [src]="movieImg" >
+    <p>{{ description }}</p>
+    <span [ngClass]="colorRatingNumber()" class="rating" ><strong>{{ rating  }}</strong></span>
+    <h1 class="title">{{title}}</h1>
+
+    <div [@overviewAnimation]="showOverview" class="overview">
+        <h2>Overview</h2>
+        <p>{{ overviewText }}</p>
+    </div>
+</div>

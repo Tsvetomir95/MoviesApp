@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  background-color: #22254b;
+  position: relative;
+  bottom: 0;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container__info:first-child {
+  margin-left: 20px;
+}
+.container__info:last-child {
+  margin-right: 20px;
+}

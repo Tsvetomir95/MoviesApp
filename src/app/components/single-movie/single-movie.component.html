@@ -1,0 +1,11 @@
+<div class="single__movie">
+    <img class="poster" [src]="'https://image.tmdb.org/t/p/w1280' + movie.poster_path" [alt]="movie.title">
+    <div class="movie__info">
+        <h1 class="title">{{movie.title}}</h1>
+        <p [ngClass]="bigOverview ? 'big-overview' : 'overview'" > {{movie.overview}}</p>
+        <p class="date"><strong>Release Date: {{ movie.release_date }}</strong></p>
+        <p class="rating__info" > Rating:  <strong [ngClass]="colorRatingNumber()" class="rating"> {{ movie.vote_average }}</strong></p>
+    </div>
+
+    <button class="btn" routerLink="/">Go Back</button>
+</div>

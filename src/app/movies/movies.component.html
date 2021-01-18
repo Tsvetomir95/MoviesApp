@@ -1,0 +1,14 @@
+
+
+<div  class="movies__row" >
+    <app-movie 
+    *ngFor="let movie of filteredMoviesArr.results | filter:query"
+    [title]="movie.title"
+     [movieImg]="images + movie.poster_path"
+     [rating]="movie.vote_average"
+     [overviewText]="movie.overview"
+     [ratingColor]="movie.vote_average"
+     [routerLink]="['movie/', movie.id]"
+     [state]="movie.title"
+     ></app-movie>
+</div>
